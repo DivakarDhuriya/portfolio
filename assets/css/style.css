@@ -16,15 +16,23 @@
   }
   .laptop-coding-section {
     position: relative;
-    display: inline-block;
-    max-width: 100%;
-    border-radius: 15px;
-    box-shadow: 0 12px 30px rgba(0,0,0,0.4);
-    overflow: hidden;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
   }
-
-  .laptop-coding-section img.laptop-frame {
-    display: block;
+  .laptop-frame {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease;
+  object-fit: cover;
+}
+.laptop-coding-section:hover .laptop-frame {
+  transform: scale(1.05);
+}
+  .laptop-coding-section img {
+/*    display: block;*/
     width: 100%;
     height: auto;
     border-radius: 15px;
